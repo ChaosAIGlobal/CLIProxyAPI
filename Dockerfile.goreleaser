@@ -4,7 +4,7 @@ FROM ${ALPINE_IMAGE}
 
 LABEL maintainer="chaos-agent"
 LABEL description="CLIProxyAPI - AI Coding Assistant Proxy & Credential Management"
-LABEL org.opencontainers.image.source="https://github.com/chaos-agent/CLIProxyAPI"
+LABEL org.opencontainers.image.source="https://github.com/ChaosAIGlobal/CLIProxyAPI"
 
 RUN apk add --no-cache \
     ca-certificates \

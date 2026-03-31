@@ -20,8 +20,8 @@
 - 支持 Simple Release（仅 x86_64 GHCR），通过 repo variable `SIMPLE_RELEASE=true` 或手动 dispatch
 
 ### Docker 镜像
-- GHCR：`ghcr.io/chaos-agent/cli-proxy-api`
-- DockerHub：`eceasy/cli-proxy-api`（需配置 `DOCKERHUB_USERNAME` 和 `DOCKERHUB_TOKEN` secrets）
+- DockerHub：`chaosaiglobal/cli-proxy-api`（需配置 `DOCKERHUB_USERNAME` 和 `DOCKERHUB_TOKEN` secrets）
+- GHCR：`ghcr.io/chaosaiglobal/cli-proxy-api`
 - GoReleaser 使用 `Dockerfile.goreleaser`（轻量运行时镜像）
 - 本地构建使用 `Dockerfile`（多阶段编译）
 
