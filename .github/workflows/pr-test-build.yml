@@ -41,13 +41,15 @@ jobs:
       # Smoke test: start server and verify management API paths
       - name: Smoke test
         run: |
-          # Create minimal config
+          # Create minimal config and auth dir
+          mkdir -p /tmp/smoke-auths
           cat > /tmp/smoke-config.yaml << 'EOF'
           host: "127.0.0.1"
           port: 18317
           remote-management:
             allow-remote: false
             secret-key: "smoke-test-key"
+          auth-dir: "/tmp/smoke-auths"
           api-keys:
             - "test-key"
           debug: false
